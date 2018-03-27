@@ -1,18 +1,59 @@
-<div id = "baner">
-  <h1>Shift Brief</h1>
-    </div>
-<div class = "post">
-  <div id = "opening-line">
-     <h2>Shavuot night shift</h2>
-     <h3>May 30 - 31</h3>
+<div class="container">
+  <div class="before-table">
+  <h1>Customer Care Shift Summery</h1>
+  <h2 id="date"></h2>
+  <h1 id="Shift">Shift<select style="height: 100%">
+  <option value="Morning">Morning</option>
+  <option value="Evening">Evening</option>
+  <option value="Night">Night</option>
+</select></h1>
   </div>
-     <p>Well, Nothing that important to report,
-  Just make sure that Idan will resend the cold feed reports in Batch mode</p>
-     </div>
- <footer>
-    <span>&copy; Shalom's Shift Brief</span>
-  </footer>
-
+ 
+  <div id="table" class="table-editable">
+    <span class="table-add glyphicon glyphicon-plus"></span>
+    <table class="table">
+      <tr>
+        <th>SF ticket</th>
+        <th>Class</th>
+		<th>Name</td>
+        <th>Praiorty</th>
+		<th></th>
+      </tr>
+      <tr>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"><select style="height: 100%">
+		  <option value="Platnuim">Platnuim</option>
+          <option value="Gold">Gold</option>
+          <option value="Silver">Silver</option>
+          </select></td>
+		  <td contenteditable="true">name</td>
+        <td>
+          <span class="table-up glyphicon glyphicon-arrow-up"></span>
+          <span class="table-down glyphicon glyphicon-arrow-down"></span>
+        </td>
+		<td>
+          <span class="table-remove glyphicon glyphicon-remove"></span>
+        </td>
+      </tr>
+      <!-- This is our clonable table line -->
+      <tr class="hide">
+        <td contenteditable="true">Untitled</td>
+       <td contenteditable="true"><select style="height: 100%"><option value="Platnuim">Platnuim</option>
+          <option value="Gold">Gold</option>
+          <option value="Silver">Silver</option>
+          </select></td>
+		  <td contenteditable="true">name</td>
+        <td>
+          <span class="table-up glyphicon glyphicon-arrow-up"></span>
+          <span class="table-down glyphicon glyphicon-arrow-down"></span>
+        </td>
+		<td>
+          <span class="table-remove glyphicon glyphicon-remove"></span>
+        </td>
+      </tr>
+    </table>
+  </div>
   
-  
-
+  <button id="export-btn" class="btn btn-primary">Export Data</button>
+  <p id="export"></p>
+</div>
